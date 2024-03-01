@@ -1,7 +1,7 @@
 import Astronaut from "../Interfaces/Iinterface";
 
 const getData = async () => {
-    const promise = await fetch('http://api.open-notify.org/astros.json');
+    const promise = await fetch('https://astronautapi.azurewebsites.net/');
     const data: Astronaut = await promise.json();
 
     return data;
